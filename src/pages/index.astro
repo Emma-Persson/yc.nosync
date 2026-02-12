@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Card from "../components/Card.astro";
 import "../styles/general.css";
 import Button from "../components/Button.astro";
+import Contentblock from "../components/Contentblock.astro";
 ---
 
 <html lang="en">
@@ -15,55 +16,44 @@ import Button from "../components/Button.astro";
     <title>Astro</title>
   </head>
   <body>
-    <Header titel="Young People" text="Vi er en frivillig forening som hjælper unge talenter i den danske reklame- og kommunikationsbranche med at netværke, udvikle dit portfolio og få foden indenfor i den kreative branche." />
-    <main>
-      <section>
-        <h1>Alt om netværksevents</h1>
-        <p>Alt hvad du skal bruge til at føle dig klar til at deltage</p>
-        <div>
-          <img src="/imgs/good_to_know.png" alt="good to know" />
-          <div>
-            <h2>Good to know hvis det er dit første netværksevent.</h2>
-            <p>Alt det du skal vide før du deltager i et netværksevent.</p>
-            <Button />
-          </div>
-        </div>
+    <Header text="Vi er en frivillig forening som hjælper unge talenter i den danske reklame- og kommunikationsbranche med at netværke, udvikle dit portfolio og få foden indenfor i den kreative branche." />
 
-        <div>
-          <div>
-            <h2>Mød andre unge kreative der har deltaget i vores events</h2>
-            <p>Læs om deres oplevelser og få gode råd fra dem der har prøvet det før.</p>
-            <Button />
-          </div>
-          <img src="/imgs/gæstebog 1.png" alt="gæstebog" />
-        </div>
-      </section>
-      <section>
-        <img src="/imgs/fællesspisning2.png" alt="fællesspisning" />
-        <h1>Vær med til vores månedlige fællesmiddag!</h1>
-        <Button />
-      </section>
+    <section>
+      <h1>Alt om netværksevents</h1>
+      <p>Alt hvad du skal bruge til at føle dig klar til at deltage</p>
+      <div class="grid_1-2">
+        <img src="/imgs/good_to_know.png" alt="good to know" />
+        <Contentblock headline="Good to know hvis det er dit første netværksevent." text="Alt det du skal vide før du deltager i et netværksevent." />
+      </div>
 
-      <section>
-        <h2>Udforsk din kreativitet</h2>
-        <p>Hold øje med sjove quizzer, gode how to’s og andet kreativt indhold</p>
+      <div class="grid_2-1">
+        <Contentblock headline="Mød andre unge kreative der har deltaget i vores events" text="Læs om deres oplevelser og få gode råd fra dem der har prøvet det før." />
+        <img src="/imgs/gæstebog 1.png" alt="gæstebog" />
+      </div>
+    </section>
+    <section>
+      <img src="/imgs/fællesspisning2.png" alt="fællesspisning" />
+      <h1>Vær med til vores månedlige fællesmiddag!</h1>
+      <Button />
+    </section>
+
+    <section>
+      <h2>Udforsk din kreativitet</h2>
+      <p>Hold øje med sjove quizzer, gode how to’s og andet kreativt indhold</p>
+      <div class="grid_1-1">
         <Card img="" headline="Hvilken kreativ profil er du?" text="Gå på opdagelse i test-biblioteket, og lær dig selv bedre at kende!" />
         <Card img="" headline="How to’s" text="Se her hvordan du kan styrke dine kreative evner" />
-      </section>
-      <section>
-        <h3>“Fedt at møde andre der bare var ligesom mig”</h3>
-        <h3>“En aften fyldt med energi og kreativitet”</h3>
-        <h3>“Mega inspirerende og virkelig godt eksekveret.”</h3>
-      </section>
-      <section>
-        <div>
-          <h2>Mød menneskerne bag organisationen</h2>
-          <p>Mød de 4 bestyrelses medlemmer.</p>
-          <Button />
-        </div>
-        <img src="" alt="" />
-      </section>
-    </main>
+      </div>
+    </section>
+    <section class="grid_1-1">
+      <h3>“Fedt at møde andre der bare var ligesom mig”</h3>
+      <h3>“En aften fyldt med energi og kreativitet”</h3>
+      <h3>“Mega inspirerende og virkelig godt eksekveret.”</h3>
+    </section>
+    <section class="grid_2-1">
+      <Contentblock headline="Mød menneskerne bag organisationen" text="Mød de 4 bestyrelses medlemmer." />
+      <img src="" alt="" />
+    </section>
     <footer>
       <div></div>
     </footer>

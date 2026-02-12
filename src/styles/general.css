@@ -24,3 +24,20 @@ header,
 section {
   padding: 2rem;
 }
+@media screen and (width >= 768px) {
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
