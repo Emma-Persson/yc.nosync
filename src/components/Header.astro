@@ -2,8 +2,60 @@
 const { titel, text } = Astro.props;
 ---
 
-<header>
-  <nav><a href="/imgs/sekundært_logo_.svg">LOGO</a> <button>Contact</button></nav>
-  <h1>{titel}</h1>
-  <p>{text}</p>
+<header class="hero">
+  <video src="/imgs/hero-video.mp4" autoplay loop muted></video>
+  <nav>
+    <a href="/">
+      <img src="/imgs/sekundært_logo_lyserød.svg" alt="Logo" />
+    </a>
+    <button>Contact</button>
+  </nav>
+  <div class="hero-content">
+    <img src="/imgs/primært_logo_lyserød.svg" alt="logo" />
+    <p>{text}</p>
+  </div>
 </header>
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  nav img {
+    width: 50px;
+    object-fit: cover;
+  }
+  img {
+    width: 500px;
+    max-width: 90%;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  p {
+    max-width: 450px;
+    padding-top: 3rem;
+    color: var(--color-lyserød);
+  }
+
+  .hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+</style>

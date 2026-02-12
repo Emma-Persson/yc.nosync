@@ -4,6 +4,12 @@
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --color-lyserød: #f1a3c3;
+  --color-blå: #24547c;
+  --color-lyseblå: #a8daff;
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -12,4 +18,9 @@ body {
 }
 h1 {
   font-weight: 800;
+}
+
+header,
+section {
+  padding: 2rem;
 }
