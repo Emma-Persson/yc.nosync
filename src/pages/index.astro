@@ -1,17 +1,53 @@
 ---
-
+import Header from "../components/Header.astro";
+import Card from "../components/Card.astro";
+import "../styles/general.css";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Header titel="Young People" text="yo kom nu og køb os" />
+
+    <section>
+      <h1>Alt om netværksevents</h1>
+      <p>Alt hvad du skal bruge til at føle dig klar til at deltage</p>
+      <div>
+        <img src="" alt="" />
+        <div>
+          <h2>Good to know hvis det er dit første netværksevent.</h2>
+          <p>Alt det du skal vide før du deltager i et netværksevent.</p>
+          <Button />
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <h2>Mød andre unge kreative der har deltaget i vores events</h2>
+          <p>Læs om deres oplevelser og få gode råd fra dem der har prøvet det før.</p>
+          <Button />
+        </div>
+      </div>
+      <h3>“Fedt at møde andre der bare var ligesom mig”</h3>
+      <h3>“En aften fyldt med energi og kreativitet”</h3>
+      <h3>“Mega inspirerende og virkelig godt eksekveret.”</h3>
+    </section>
+    <section>
+      <img src="" alt="" />
+    </section>
+    <section>
+      <h2>overskrift card</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aperiam?</p>
+      <Card img="/imgs/fælles2.png" headline="card" text="Lorem ipsum dolor sit amet." />
+      <Card img="" headline="card 2" text="amet." />
+    </section>
+  </body>
 </html>
