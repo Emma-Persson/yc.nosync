@@ -1,0 +1,69 @@
+---
+import { Image } from "astro:assets";
+import lyserød from "../../public/imgs/lyserød.png";
+---
+
+<section>
+  <div class="quote2">
+    <Image src={lyserød} alt="lyserød baggrund" class="pink" />
+    <div class="text">
+      <h3 class="q1"><em>“Fedt at møde andre der bare var ligesom mig”</em></h3>
+      <h3 class="q2"><em>“En aften fyldt med energi og kreativitet”</em></h3>
+      <h3 class="q3">
+        <em>“Mega inspirerende og virkelig godt eksekveret.”</em>
+      </h3>
+    </div>
+  </div>
+</section>
+<style>
+  h3 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+  }
+  .pink {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+  }
+
+  .quote2 {
+    position: relative;
+    width: 100%;
+  }
+
+  .pink {
+    width: 100%;
+    display: block;
+  }
+
+  .text {
+    position: absolute;
+    inset: 0;
+    color: #25547c;
+  }
+
+  /* individuelle citater */
+  .q1 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 35%;
+  }
+
+  .q2 {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    width: 35%;
+  }
+
+  .q3 {
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+    width: 40%;
+  }
+</style>
