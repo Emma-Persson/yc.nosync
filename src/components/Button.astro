@@ -1,8 +1,8 @@
 ---
-const { text, type } = Astro.props;
+const { text, type, size } = Astro.props;
 ---
 
-<a href="#" class={type}>
+<a href="#" class={type + "" + size}>
   <p>{text}</p>
 </a>
 <style>
