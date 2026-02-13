@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import bestyrelse from "../../public/imgs/bestyrelse.png";
+import BigCard from "./BigCard.astro";
+---
+
+<section>
+  <BigCard
+    placeholder={bestyrelse}
+    buttonText="Se her"
+    headline="Mød menneskerne bag organisationen"
+    text="YCDK hjalp mig med at overkomme min socialangst med networking. Den oplevelse vil jeg gerne give videre og lære fra mig, så meget jeg kan."
+    order="-1"
+  />
+</section>
+<style>
+  section {
+    padding: 4rem 3rem;
+  }
+</style>
