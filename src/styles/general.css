@@ -27,18 +27,20 @@ section {
 @media screen and (width >= 768px) {
   .grid_1-2 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
     gap: 2rem;
   }
   .grid_2-1 {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1.5fr;
     gap: 2rem;
   }
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    justify-content: center;
+    justify-items: center;
   }
 }
 
@@ -50,4 +52,12 @@ section {
 }
 .img-stor {
   padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+img {
+  margin-bottom: 1rem;
 }
