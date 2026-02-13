@@ -1,9 +1,10 @@
 ---
-const { img, headline, text } = Astro.props;
+const { placeholder, headline, text } = Astro.props;
+import { Image } from "astro:assets";
 ---
 
 <article>
-  <img src={img} />
+  <Image src={placeholder} alt="Beskrivende tekst" class="placeholder" />
   <h3>{headline}</h3>
   <p>{text}</p>
 </article>
