@@ -3,12 +3,12 @@ import { Image } from "astro:assets";
 import logo from "../../public/imgs/primært_logo_lyserød.svg";
 ---
 
-<section class="grid_1-2">
+<section class="footer">
   <div>
-    <Image src={logo} alt="Logo" />
+    <Image src={logo} alt="Logo" class="footer-logo" />
     <p>Vi er en frivillig forening som hjælper unge talenter i den danske reklame- og kommunikationsbranche med at netværke, udvikle dit portfolio og få foden indenfor i den kreative branche.</p>
   </div>
-  <div class="grid_1-1">
+  <div class="footer-right">
     <div>
       <h3>Socials</h3>
       <ul>
@@ -31,7 +31,18 @@ import logo from "../../public/imgs/primært_logo_lyserød.svg";
   section {
     background-color: var(--color-blå);
     height: auto;
+    padding: 6rem 4rem;
   }
+  .footer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .footer-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
   li {
     list-style: none;
   }
@@ -43,10 +54,25 @@ import logo from "../../public/imgs/primært_logo_lyserød.svg";
   li,
   a {
     color: var(--color-lyserød);
-    max-width: 400px;
+    max-width: 100%;
+    max-height: 200px;
   }
-  img {
-    width: 500px;
+  li {
+    font-weight: 200;
+  }
+  h3 {
+    font-weight: 800;
+  }
+  p {
+    max-width: 450px;
+    font-weight: 400;
+  }
+  .footer-logo {
+    width: 280px;
     max-width: 90%;
+    height: auto;
+    display: block;
+    padding-bottom: 0;
+    margin-bottom: 3rem;
   }
 </style>
