@@ -13,6 +13,7 @@ import bestyrelse from "../../public/imgs/bestyrelse.png";
 import lyserød from "../../public/imgs/lyserød.png";
 import test from "../../public/imgs/test.png";
 import howto from "../../public/imgs/howto.png";
+import Section4 from "../components/Section4.astro";
 ---
 
 <html lang="en">
@@ -25,14 +26,28 @@ import howto from "../../public/imgs/howto.png";
     <title>Astro</title>
   </head>
   <body>
-    <Header text="Vi er en frivillig forening som hjælper unge talenter i den danske reklame- og kommunikationsbranche med at netværke, udvikle dit portfolio og få foden indenfor i den kreative branche." />
+    <Header
+      text="Vi er en frivillig forening som hjælper unge talenter i den danske reklame- og kommunikationsbranche med at netværke, udvikle dit portfolio og få foden indenfor i den kreative branche."
+    />
 
     <section>
       <h1>Alt om netværksevents</h1>
       <p>Alt hvad du skal bruge til at føle dig klar til at deltage</p>
       <div>
-        <BigCard placeholder={goodtoknow} buttonText="Se her" headline="Good to know hvis det er dit første netværksevent." text="Alt det du skal vide før du deltager i et netværksevent." order="1" />
-        <BigCard placeholder={gæstebog} buttonText=" Se her" headline="Mød andre unge kreative der har deltaget i vores events" text="Læs om deres oplevelser og få gode råd fra dem der har prøvet det før." order="-1" />
+        <BigCard
+          placeholder={goodtoknow}
+          buttonText="Se her"
+          headline="Good to know hvis det er dit første netværksevent."
+          text="Alt det du skal vide før du deltager i et netværksevent."
+          order="1"
+        />
+        <BigCard
+          placeholder={gæstebog}
+          buttonText=" Se her"
+          headline="Mød andre unge kreative der har deltaget i vores events"
+          text="Læs om deres oplevelser og få gode råd fra dem der har prøvet det før."
+          order="-1"
+        />
       </div>
       <section class="img-stor">
         <Image src={stor} alt="Stor" />
@@ -42,26 +57,30 @@ import howto from "../../public/imgs/howto.png";
 
       <section>
         <h2>Udforsk din kreativitet</h2>
-        <p>Hold øje med sjove quizzer, gode how to’s og andet kreativt indhold</p>
+        <p>
+          Hold øje med sjove quizzer, gode how to’s og andet kreativt indhold
+        </p>
         <div class="grid_1-1">
           <div>
-            <Card placeholder={test} headline="Hvilken kreativ profil er du?" text="Gå på opdagelse i test-biblioteket, og lær dig selv bedre at kende!" />
+            <Card
+              placeholder={test}
+              headline="Hvilken kreativ profil er du?"
+              text="Gå på opdagelse i test-biblioteket, og lær dig selv bedre at kende!"
+            />
             <Button buttonText="Se her" type="secondary" />
           </div>
           <div>
-            <Card placeholder={howto} headline="How to’s" text="Se her hvordan du kan styrke dine kreative evner" />
+            <Card
+              placeholder={howto}
+              headline="How to’s"
+              text="Se her hvordan du kan styrke dine kreative evner"
+            />
             <Button buttonText="Se her" />
           </div>
         </div>
       </section>
-      <section>
-        <Image src={lyserød} alt="lyserød baggrund" />
-        <div class="grid_1-1">
-          <h3>“Fedt at møde andre der bare var ligesom mig”</h3>
-          <h3>“En aften fyldt med energi og kreativitet”</h3>
-          <h3>“Mega inspirerende og virkelig godt eksekveret.”</h3>
-        </div>
-      </section>
+      <Section4 />
+
       <section>
         <BigCard
           placeholder={bestyrelse}
