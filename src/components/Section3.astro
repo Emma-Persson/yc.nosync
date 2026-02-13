@@ -1,0 +1,40 @@
+---
+import Card from "./Card.astro";
+import Button from "./Button.astro";
+import test from "../../public/imgs/test.png";
+import howto from "../../public/imgs/howto.png";
+import { Image } from "astro:assets";
+---
+
+<section>
+  <h2>Udforsk din kreativitet</h2>
+  <p>Hold øje med sjove quizzer, gode how to’s og andet kreativt indhold</p>
+  <div class="grid_1-1">
+    <div>
+      <Card placeholder={test} headline="Hvilken kreativ profil er du?" text="Gå på opdagelse i test-biblioteket, og lær dig selv bedre at kende!" />
+      <Button buttonText="Se her" type="secondary" />
+    </div>
+    <div>
+      <Card placeholder={howto} headline="How to’s" text="Se her hvordan du kan styrke dine kreative evner" />
+      <Button buttonText="Se her" />
+    </div>
+  </div>
+</section>
+<style>
+  section {
+    padding: 4rem 3rem;
+  }
+  p {
+    padding-bottom: 3rem;
+  }
+  h2,
+  p {
+    color: var(--color-blå);
+  }
+  h2 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+  }
+</style>
