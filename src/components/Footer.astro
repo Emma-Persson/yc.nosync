@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+import logo from "../../public/imgs/primært_logo_lyserød.svg";
+---
+
+<section class="grid_1-2">
+  <div>
+    <Image src={logo} alt="Logo" />
+    <p>Vi er en frivillig forening som hjælper unge talenter i den danske reklame- og kommunikationsbranche med at netværke, udvikle dit portfolio og få foden indenfor i den kreative branche.</p>
+  </div>
+  <div class="grid_1-1">
+    <div>
+      <h3>Socials</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/youngcreativesdk?locale=da_DK">Facebook</a></li>
+        <li><a href="https://www.instagram.com/youngcreativesdenmark/">Instagram</a></li>
+      </ul>
+    </div>
+    <div><h3>Telefon</h3><ul><li>60 91 43 26</li></ul></div>
+    <div>
+      <h3>Adresse</h3><ul>
+        <li>Jacob Cameron Brook</li>
+        <li>Landskronagade 27, st.,</li>
+        <li>2100 København Ø</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--color-blå);
+    height: auto;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  p,
+  h3,
+  li,
+  a {
+    color: var(--color-lyserød);
+    max-width: 400px;
+  }
+  img {
+    width: 500px;
+    max-width: 90%;
+  }
+</style>
