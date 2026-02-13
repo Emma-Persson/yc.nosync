@@ -1,10 +1,8 @@
 ---
-const { text, type, size } = Astro.props;
+const { buttonText, type } = Astro.props;
 ---
 
-<a href="#" class={type + "" + size}>
-  <p>{text}</p>
-</a>
+<a href="#" class={type}>{buttonText} </a>
 <style>
   a {
     text-decoration: none;

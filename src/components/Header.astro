@@ -1,6 +1,7 @@
 ---
 import Button from "./Button.astro";
-const { titel, text } = Astro.props;
+const { titel, text, buttonText } = Astro.props;
+import logo from "../../public/imgs/primært_logo_lyserød.svg";
 ---
 
 <header class="hero">
@@ -9,7 +10,7 @@ const { titel, text } = Astro.props;
     <a href="/">
       <img src="/imgs/sekundært_logo_lyserød.svg" alt="Logo" />
     </a>
-    <Button text="Contact" />
+    <Button buttonText="Contact" />
   </nav>
   <div class="hero-content">
     <img src="/imgs/primært_logo_lyserød.svg" alt="logo" />

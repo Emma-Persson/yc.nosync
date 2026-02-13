@@ -20,19 +20,10 @@ h1 {
   font-weight: 800;
 }
 
-header,
-section {
-  padding: 2rem;
-}
 @media screen and (width >= 768px) {
   .grid_1-2 {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
-    gap: 2rem;
-  }
-  .grid_2-1 {
-    display: grid;
-    grid-template-columns: 2fr 1.5fr;
     gap: 2rem;
   }
   .grid_1-1 {
