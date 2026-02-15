@@ -1,10 +1,43 @@
 ---
 import { Image } from "astro:assets";
-import fællesspisning from "../../public/imgs/imgstor.png";
+import fællesspisning from "../../public/imgs/fællesspisning.png";
+import Button from "./Button.astro";
 ---
 
-<section class="img-stor">
-  <Image src={stor} alt="Stor" />
-  <h1>Vær med til vores månedlige fællesmiddag!</h1>
-  <Button buttonText="Se her" />
+<section class="food">
+  <Image src={fællesspisning} alt="mad" class="mad_billede" />
+  <div class="overlay">
+    <h1>Vær med til vores månedlige fællesmiddag!</h1>
+    <Button buttonText="Se her" />
+  </div>
 </section>
+
+<style>
+  .food {
+    position: relative;
+    width: 100%;
+  }
+
+  .mad_billede {
+    width: 100%;
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 4rem;
+    gap: 1.5rem;
+  }
+
+  .overlay h1 {
+    color: #f2a3c0;
+    max-width: 500px;
+  }
+</style>

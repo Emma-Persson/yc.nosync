@@ -7,7 +7,7 @@ import BigCard from "../components/BigCard.astro";
 import { Image } from "astro:assets";
 import goodtoknow from "../../public/imgs/good_to_know.png";
 import gæstebog from "../../public/imgs/gæstebog.png";
-import stor from "../../public/imgs/imgstor.png";
+import fællesspisning from "../../public/imgs/fællesspisning.png";
 import Section4 from "../components/Section4.astro";
 import Section2 from "../components/Section2.astro";
 import Section5 from "../components/Section5.astro";
@@ -25,7 +25,9 @@ import Section1 from "../components/Section1.astro";
     <title>Astro</title>
   </head>
   <body>
-    <Header text="Vi er en frivillig forening som hjælper unge talenter i den danske reklame- og kommunikationsbranche med at netværke, udvikle dit portfolio og få foden indenfor i den kreative branche." />
+    <Header
+      text="Vi er en frivillig forening som hjælper unge talenter i den danske reklame- og kommunikationsbranche med at netværke, udvikle dit portfolio og få foden indenfor i den kreative branche."
+    />
 
     <section>
       <h1>Alt om netværksevents</h1>
@@ -84,16 +86,17 @@ import Section1 from "../components/Section1.astro";
         />
       </section>
       <Footer />
-    <Section1 />
-    <section class="img-stor">
-      <Image src={stor} alt="Stor" />
-      <h1>Vær med til vores månedlige fællesmiddag!</h1>
-      <Button buttonText="Se her" />
-    </section>
+      <Section1 />
+      <section class="img-stor">
+        <Image src={stor} alt="Stor" />
+        <h1>Vær med til vores månedlige fællesmiddag!</h1>
+        <Button buttonText="Se her" />
+      </section>
 
-    <Section3 />
-    <Section4 />
-    <Section5 />
-    <Footer />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Footer />
+    </section>
   </body>
 </html>
