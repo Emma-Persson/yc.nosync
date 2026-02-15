@@ -16,26 +16,26 @@ import { Image } from "astro:assets";
   p {
     margin-bottom: 0.5rem;
   }
-
-  img {
-    width: 100%;
+  .placeholder {
+    width: 400px;
+    max-height: 500px;
+    object-fit: cover;
+    justify-self: center;
   }
 
-  h2 {
-    font-size: smaller;
+  h3,
+  p {
+    color: var(--color-blå);
   }
 
   p {
     font-size: smaller;
+    max-width: 300px;
+    padding-bottom: 2rem;
   }
-
-  @media screen and (width >= 800px) {
-    h2 {
-      font-size: medium;
-    }
-
-    p {
-      font-size: medium;
-    }
+  h3 {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 20px;
   }
 </style>

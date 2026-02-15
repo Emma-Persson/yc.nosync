@@ -1,0 +1,29 @@
+---
+import BigCard from "./BigCard.astro";
+import goodtoknow from "../../public/imgs/good_to_know.png";
+import gæstebog from "../../public/imgs/gæstebog.png";
+---
+
+<section>
+  <h1>Alt om netværksevents</h1>
+  <p>Alt hvad du skal bruge til at føle dig klar til at deltage</p>
+  <div>
+    <BigCard placeholder={goodtoknow} buttonText="Se her" headline="Good to know hvis det er dit første netværksevent." text="Alt det du skal vide før du deltager i et netværksevent." order="1" />
+    <BigCard placeholder={gæstebog} buttonText=" Se her" headline="Mød andre unge kreative der har deltaget i vores events" text="Læs om deres oplevelser og få gode råd fra dem der har prøvet det før." order="-1" />
+  </div>
+</section>
+<style>
+  section {
+    padding: 4rem 3rem;
+  }
+  p {
+    color: var(--color-blå);
+  }
+  h1 {
+    color: var(--color-lyserød);
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+  }
+</style>
