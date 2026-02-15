@@ -23,13 +23,9 @@ import logo from "../../public/imgs/primært_logo_lyserød.svg";
     justify-content: space-between;
     align-items: center;
   }
-  .hero {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-  }
+
   nav img {
-    width: 80px;
+    width: 40px;
     object-fit: cover;
   }
 
@@ -37,7 +33,7 @@ import logo from "../../public/imgs/primært_logo_lyserød.svg";
     padding: 2rem 2rem;
   }
   img {
-    width: 500px;
+    width: 250px;
     max-width: 90%;
   }
   .hero-content {
@@ -51,11 +47,11 @@ import logo from "../../public/imgs/primært_logo_lyserød.svg";
     text-align: center;
   }
   p {
-    max-width: 450px;
+    max-width: 250px;
     padding-top: 3rem;
     color: var(--color-lyserød);
+    font-size: small;
   }
-
   .hero video {
     position: absolute;
     top: 0;
@@ -64,5 +60,32 @@ import logo from "../../public/imgs/primært_logo_lyserød.svg";
     height: 100%;
     object-fit: cover;
     z-index: -1;
+  }
+  .hero {
+    position: relative;
+
+    overflow: hidden;
+  }
+
+  @media screen and (width >= 768px) {
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    p {
+      max-width: 450px;
+      padding-top: 3rem;
+      color: var(--color-lyserød);
+      font-size: medium;
+    }
+    img {
+      width: 500px;
+      max-width: 90%;
+    }
+    nav img {
+      width: 80px;
+      object-fit: cover;
+    }
   }
 </style>

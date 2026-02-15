@@ -34,7 +34,7 @@ const { headline, text, placeholder, buttonText, order } = Astro.props;
     align-items: center;
   }
   section {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
   }
   section img {
     width: 80%;
@@ -50,11 +50,29 @@ const { headline, text, placeholder, buttonText, order } = Astro.props;
   p,
   h2 {
     color: var(--color-blå);
-    max-width: 500px;
+    max-width: 400px;
   }
   h2 {
     font-weight: 700;
     font-style: bold;
-    font-size: xx-large;
+    font-size: x-large;
+  }
+  p {
+    font-size: small;
+  }
+  @media screen and (width >= 768px) {
+    p,
+    h2 {
+      max-width: 500px;
+    }
+    h2 {
+      font-size: xx-large;
+    }
+    p {
+      font-size: medium;
+    }
+    section {
+      padding: 2rem 4rem;
+    }
   }
 </style>

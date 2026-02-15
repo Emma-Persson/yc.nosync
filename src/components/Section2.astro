@@ -35,8 +35,19 @@ import Button from "./Button.astro";
     gap: 1.5rem;
   }
 
+    h1{
+    font-size: 20px;
+  }
   .overlay h1 {
     color: var(--color-lyserød);
+    max-width: 300px;
+  }
+  @media screen and (width >= 768px) {
+    .overlay h1 {
+
     max-width: 500px;
+  }
+  h1{
+    font-size: 40px;
   }
 </style>

@@ -31,16 +31,6 @@ import logo from "../../public/imgs/primært_logo_lyserød.svg";
   section {
     background-color: var(--color-blå);
     height: auto;
-    padding: 6rem 4rem;
-  }
-  .footer {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-  }
-  .footer-right {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
   }
 
   li {
@@ -56,23 +46,84 @@ import logo from "../../public/imgs/primært_logo_lyserød.svg";
     color: var(--color-lyserød);
     max-width: 100%;
     max-height: 200px;
+    font-size: small;
   }
   li {
     font-weight: 200;
+    font-size: xx-small;
   }
   h3 {
     font-weight: 800;
   }
   p {
-    max-width: 450px;
+    max-width: 300px;
     font-weight: 400;
+    font-size: xx-small;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
   }
   .footer-logo {
-    width: 280px;
+    width: 200px;
     max-width: 90%;
     height: auto;
     display: block;
     padding-bottom: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    padding-top: 3rem;
+  }
+  .footer-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .footer-right {
+    padding: 1rem 3rem;
+  }
+  @media screen and (width >= 768px) {
+    .footer-logo {
+      width: 280px;
+      max-width: 90%;
+      height: auto;
+      display: block;
+      padding-bottom: 0;
+      margin-bottom: 3rem;
+    }
+    p,
+    h3,
+    li,
+    a {
+      color: var(--color-lyserød);
+      max-width: 100%;
+    }
+    section {
+      padding: 6rem 4rem;
+    }
+    .footer {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+    }
+    .footer-logo {
+      width: 280px;
+      max-width: 90%;
+      height: auto;
+      display: block;
+      padding-bottom: 0;
+      margin-bottom: 3rem;
+    }
+    p {
+      max-width: 450px;
+      font-weight: 400;
+      font-size: medium;
+    }
+
+    h3 {
+      font-size: large;
+    }
+    li,
+    li a {
+      font-weight: 200;
+      font-size: medium;
+    }
   }
 </style>
