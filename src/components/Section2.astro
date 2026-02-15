@@ -5,7 +5,38 @@ import Button from "./Button.astro";
 ---
 
 <section class="img-stor">
-  <Image src={fællesspisning} alt="Fællesspisning" />
-  <h1>Vær med til vores månedlige fællesmiddag!</h1>
-  <Button buttonText="Se her" />
+  <Image src={fællesspisning} alt="Fællesspisning" class="mad" />
+  <div class="overlay">
+    <h1>Vær med til vores månedlige fællesmiddag!</h1>
+    <Button buttonText="Se her" />
+  </div>
 </section>
+<style>
+  .img-stor {
+    position: relative;
+    width: 100%;
+  }
+
+  .mad {
+    width: 100%;
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 4rem;
+    gap: 1.5rem;
+  }
+
+  .overlay h1 {
+    color: var(--color-lyserød);
+    max-width: 500px;
+  }
+</style>
