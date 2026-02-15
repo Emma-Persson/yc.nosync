@@ -9,6 +9,7 @@ import goodtoknow from "../../public/imgs/good_to_know.png";
 import gæstebog from "../../public/imgs/gæstebog.png";
 import stor from "../../public/imgs/imgstor.png";
 import Section4 from "../components/Section4.astro";
+import Section2 from "../components/Section2.astro";
 import Section5 from "../components/Section5.astro";
 import Section3 from "../components/Section3.astro";
 import Section1 from "../components/Section1.astro";
@@ -26,6 +27,63 @@ import Section1 from "../components/Section1.astro";
   <body>
     <Header text="Vi er en frivillig forening som hjælper unge talenter i den danske reklame- og kommunikationsbranche med at netværke, udvikle dit portfolio og få foden indenfor i den kreative branche." />
 
+    <section>
+      <h1>Alt om netværksevents</h1>
+      <p>Alt hvad du skal bruge til at føle dig klar til at deltage</p>
+      <div>
+        <BigCard
+          placeholder={goodtoknow}
+          buttonText="Se her"
+          headline="Good to know hvis det er dit første netværksevent."
+          text="Alt det du skal vide før du deltager i et netværksevent."
+          order="1"
+        />
+        <BigCard
+          placeholder={gæstebog}
+          buttonText=" Se her"
+          headline="Mød andre unge kreative der har deltaget i vores events"
+          text="Læs om deres oplevelser og få gode råd fra dem der har prøvet det før."
+          order="-1"
+        />
+      </div>
+      <Section2 />
+
+      <section>
+        <h2>Udforsk din kreativitet</h2>
+        <p>
+          Hold øje med sjove quizzer, gode how to’s og andet kreativt indhold
+        </p>
+        <div class="grid_1-1">
+          <div>
+            <Card
+              placeholder={test}
+              headline="Hvilken kreativ profil er du?"
+              text="Gå på opdagelse i test-biblioteket, og lær dig selv bedre at kende!"
+            />
+            <Button buttonText="Se her" type="secondary" />
+          </div>
+          <div>
+            <Card
+              placeholder={howto}
+              headline="How to’s"
+              text="Se her hvordan du kan styrke dine kreative evner"
+            />
+            <Button buttonText="Se her" />
+          </div>
+        </div>
+      </section>
+      <Section4 />
+
+      <section>
+        <BigCard
+          placeholder={bestyrelse}
+          buttonText="Se her"
+          headline="Mød menneskerne bag organisationen"
+          text="YCDK hjalp mig med at overkomme min socialangst med networking. Den oplevelse vil jeg gerne give videre og lære fra mig, så meget jeg kan."
+          order="-1"
+        />
+      </section>
+      <Footer />
     <Section1 />
     <section class="img-stor">
       <Image src={stor} alt="Stor" />
